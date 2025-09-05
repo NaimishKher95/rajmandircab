@@ -4601,15 +4601,22 @@ h6 {
   transition: all 400ms ease;
 }
 
-.pattern-bg {
+.checkerboard {
   width: 100%;
-  height: 50px;
-  background-color: var(--raj-white, #ffffff);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-repeat: repeat-x;
-  animation: cloudMove 60s linear 0s infinite;
+  height: 40px;
+  background-image: repeating-conic-gradient(
+    from 0deg,
+    #141414 0 25%,
+    #de2c30 0 50%
+  );
+  background-size: 40px;
+  animation: checkerScrollReverse 2s linear infinite;
+  will-change: background-position;
+}
+
+@keyframes checkerScrollReverse {
+  from { background-position: -40px 0; }
+  to   { background-position: 0 0; }
 }
 
 .tabs-box .tabs-content .tab:not(.active-tab) {
@@ -6463,7 +6470,7 @@ li:hover .topbar__info__icon {
   z-index: 1;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1299px) {
   .main-header__call {
     display: none;
   }
@@ -18073,7 +18080,7 @@ li:hover .sidebar__comments__icon {
   line-height: 175%;
   margin-bottom: 20px;
   padding-bottom: 0;
-  max-height: 250px;
+  height: 250px;
   overflow-y: auto;
 }
 
