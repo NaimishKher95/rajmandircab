@@ -343,6 +343,12 @@ a:active {
   outline: none;
 }
 
+@media (min-width: 992px) {
+  .mt-custom-7 {
+    margin-top: 5rem !important;
+  }
+}
+
 /* Forms
 --------------------------------------------- */
 button,
@@ -6442,6 +6448,24 @@ li:hover .topbar__info__icon {
   left: 0;
   transform: translateY(-50%);
   background-color: var(--raj-black, #141414);
+}
+
+@media (max-width: 599px) {
+  .offcanvas.offcanvas-end{
+    width: 75%;
+  }
+}
+
+.bar-display {
+    display: none !important;
+}
+@media (max-width: 1199px) {
+  .bar-display {
+    display: inline-block !important;
+  }
+  .main-header__right .main-header__right__inner {
+    display: none;
+  }
 }
 
 @media (max-width: 1299px) {

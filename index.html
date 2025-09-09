@@ -208,6 +208,9 @@
       text-decoration: none;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/9QIvQh5I1lR7tWlW2nN4z3C4IoJ2wjK0y8w8S+M6wlvh3oP6Ic3eI8s+1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="./ico.ico" type="image/x-icon" />
   <link rel="stylesheet" id="raj-editor-fonts-css"
     href="http://fonts.googleapis.com/css?family=Manrope%3A400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%7CLexend%3A400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%26subset%3Dlatin%2Clatin-ext" />
@@ -724,7 +727,7 @@
 </head>
 
 <body
-  class="home wp-singular page-template page-template-elementor_header_footer page page-id-64 wp-embed-responsive wp-theme-raj theme-raj raj-addon woocommerce-no-js woocommerce-active elementor-default elementor-template-full-width elementor-kit-4 elementor-page elementor-page-64">
+  class="home wp-singular page-template page-template-elementor_header_footer page page-id-64 wp-embed-responsive wp-theme-raj theme-raj raj-addon woocommerce-no-js woocommerce-active elementor-default elementor-template-full-width elementor-kit-4 elementor-page elementor-page-64 bg-light">
   <!-- Preloader -->
   <!-- <div class="preloader">
 		<div class="preloader__image"></div>
@@ -808,10 +811,40 @@
                       </div>
                     </nav>
                     <!-- /.main-header__nav -->
-                    <div class="mobile-nav__btn mobile-nav__toggler">
-                      <span></span>
-                      <span></span>
-                      <span></span>
+                    <i class="fa fa-bars bar-display navbar-toggler-icon p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                      aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i>
+
+                    <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body pt-0">
+                        <ul class="navbar-nav align-items-center m-0">
+                          <li class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#about">About Us</a>
+                          </li>
+                          <li class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#services">Services</a>
+                          </li>
+                          <li class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#footer">Contact</a>
+                          </li>
+                          <hr class="hr" />
+                          <li class="nav-link" data-bs-dismiss="offcanvas">
+                            <div class="main-header__btn-box">
+                              <a href="tel:+91-971-475-8497" class="main-header__btn raj-btn raj-btn--secondary">
+                                <span class="raj-btn__icon"><i class="icon-front-car"></i></span>
+                                <span>book a taxi</span> </a><!-- /.main-header__btn -->
+                              <div class="main-header__btn__border"></div>
+                              <!-- /.main-header__btn__border -->
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <!-- /.mobile-nav__toggler -->
                     <!-- <a href="#" class="search-toggler main-header__search">
@@ -1164,7 +1197,7 @@
         <div class="elementor-element elementor-element-e47a939 elementor-widget elementor-widget-raj-taxi-rates"
           data-id="e47a939" data-element_type="widget" data-widget_type="raj-taxi-rates.default">
           <div class="elementor-widget-container">
-            <section class="taxi-rates-one section-space taxi-rates-one--home-3" id="taxi-rates">
+            <section class="taxi-rates-one section-space pb-0 taxi-rates-one--home-3" id="taxi-rates">
               <div class="taxi-rates-one__bg" style="
                     background-image: url(assets/uploads/2025/04/taxi-rates-bg-1-1.png);
                   "></div>
@@ -1282,7 +1315,7 @@
                             <!-- /.taxi-card__bg -->
                             <div class="taxi-card__inner">
                               <div class="taxi-card__image">
-                                <img decoding="async" src="assets/images/car/innova-crysta.png" alt="taxi-1-1"
+                                <img decoding="async" src="assets/images/car/crysta.png" alt="taxi-1-1"
                                   title="taxi-1-1" />
                                 <!-- <h3 class="taxi-card__price">starting $99</h3> -->
                                 <!-- /.taxi-card__price -->
@@ -1334,7 +1367,7 @@
                             <!-- /.taxi-card__bg -->
                             <div class="taxi-card__inner">
                               <div class="taxi-card__image">
-                                <img decoding="async" src="assets/images/car/Aura final.png" alt="taxi-1-1"
+                                <img decoding="async" src="assets/images/car/aura.png" alt="taxi-1-1"
                                   title="taxi-1-1" />
                                 <!-- <h3 class="taxi-card__price">starting $99</h3> -->
                                 <!-- /.taxi-card__price -->
@@ -2230,550 +2263,12 @@
         </div>
       </div>
 
-      <div id="services" class="elementor-element elementor-element-ffd5bbe e-con-full e-flex e-con e-parent"
-        data-id="ffd5bbe" data-element_type="container">
-        <div class="elementor-element elementor-element-827249e elementor-widget elementor-widget-raj-service"
-          data-id="827249e" data-element_type="widget" data-widget_type="raj-service.default">
-          <div class="elementor-widget-container">
-            <section class="services-one section-space pb-0" id="services">
-              <div class="services-one__bg" style="
-                    background-image: url(assets/uploads/2025/04/services-bg-1-1.png);
-                  "></div>
-              <!-- /.services-one__bg -->
-              <div class="container">
-                <div class="raj-info">
-                  <div class="raj-info__inner">
-                    <div class="raj-info__bg" style="
-                          background-image: url(assets/uploads/2025/04/raj-info-bg-1-1.png);
-                        "></div>
-                    <!-- /.raj-info__bg -->
-                    <div class="raj-info__row row">
-                      <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                        <div class="raj-info__item">
-                          <div class="raj-info__item__icon">
-                            <i aria-hidden="true" class="icon-booking"></i>
-                          </div>
-                          <!-- /.raj-info__item__icon -->
-                          <h4 class="raj-info__item__title">
-                            Easy Booking &amp;<br />
-                            Instant Confirmation
-                          </h4>
-                          <!-- /.raj-info__item__title -->
-                        </div>
-                        <!-- /.raj-info__item -->
-                      </div>
-                      <!-- /.col-lg-4 -->
-                      <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                        <div class="raj-info__item">
-                          <div class="raj-info__item__icon">
-                            <i aria-hidden="true" class="icon-map"></i>
-                          </div>
-                          <!-- /.raj-info__item__icon -->
-                          <h4 class="raj-info__item__title">
-                            Pickup available <br />
-                            wherever you are
-                          </h4>
-                          <!-- /.raj-info__item__title -->
-                        </div>
-                        <!-- /.raj-info__item -->
-                      </div>
-                      <!-- /.col-lg-4 -->
-                      <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                        <div class="raj-info__item">
-                          <div class="raj-info__item__icon">
-                            <i aria-hidden="true" class="icon-costumer"></i>
-                          </div>
-                          <!-- /.raj-info__item__icon -->
-                          <h4 class="raj-info__item__title">
-                            Trusted by thousands <br />
-                            loved by every rider
-                          </h4>
-                          <!-- /.raj-info__item__title -->
-                        </div>
-                        <!-- /.raj-info__item -->
-                      </div>
-                      <!-- /.col-lg-4 -->
-                    </div>
-                    <!-- /.raj-info__row row -->
-                    <img decoding="async" src="assets/uploads/2025/04/raj-info-1-1.jpg" alt="raj-info-1-1"
-                      title="raj-info-1-1" class="raj-info__image" />
-                  </div>
-                  <!-- /.raj-info__inner -->
-                </div>
-                <!-- /.raj-info -->
-              </div>
-              <!-- /.container -->
-              <div class="container">
-                <div class="services-one__top">
-                  <div class="row gutter-y-50 align-items-center">
-                    <div class="col-md-8">
-                      <div class="sec-title">
-                        <div class="sec-title__top wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="150ms">
-                          <div class="sec-title__shape"></div>
-                          <!-- /.sec-title__shape -->
-                          <h6 class="sec-title__tagline">our services</h6>
-                          <!-- /.sec-title__tagline -->
-                        </div>
-                        <!-- /.sec-title__top -->
-                        <h3 class="sec-title__title wow fadeInUp">
-                          Tailored Travel for<br />
-                          Every Occasion
-                        </h3>
-                      </div>
-                      <!-- /.sec-title -->
-                    </div>
-                    <!-- /.col-md-8 -->
-                    <div class="col-md-4">
-                      <div class="services-one__custome-navs"></div>
-                      <!-- /.services-one__custom-navs -->
-                    </div>
-                    <!-- /.col-md-4 -->
-                  </div>
-                  <!-- /.row gutter-y-40 -->
-                </div>
-                <!-- /.services-one__top -->
-                <div
-                  class="services-one__carousel raj-owl__carousel raj-owl__carousel--basic-nav owl-carousel owl-theme"
-                  data-owl-options='{
-                    "items": 1,
-                    "margin": 10,
-                    "loop": true,
-                    "smartSpeed": 700,
-                    "navContainer": ".services-one__custome-navs",
-                    "nav": true,
-                    "dots": false,
-                    "navText": ["<span class=\"icon-arrow-left\"></span>","<span class=\"icon-arrow-right\"></span>"],
-                    "autoplay": true,
-                    "responsive": {
-                        "0": {
-                            "items": 1,
-                            "margin": 10
-                        },
-                        "576": {
-                            "items": 1,
-                            "margin": 30
-                        },
-                        "768": {
-                            "items": 2,
-                            "margin": 30
-                        },
-                        "992": {
-                            "items": 2,
-                            "margin": 30
-                        },
-                        "1200": {
-                            "items": 3,
-                            "margin": 30
-                        }
-                    }
-                }'>
-                  <!-- /.item -->
-                  <div class="item">
-                    <div class="service-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
-                      <div class="service-card__image">
-                        <img decoding="async" src="assets/uploads/2025/04/family_tour.jpg" alt="service-1-3"
-                          title="service-1-3" />
-                      </div>
-                      <!-- /.service-card__image -->
-                      <div class="service-card__middle">
-                        <div class="service-card__icon">
-                          <div class="service-card__icon__inner">
-                            <i aria-hidden="true" class="icon-car"></i>
-                          </div>
-                          <!-- /.service-card__icon__inner -->
-                          <h3 class="service-card__title">
-                            <a href="#">Holiday<br />Tour</a>
-                          </h3>
-                        </div>
-                        <p class="services-four__top__text wow fadeInUp" data-wow-duration="1500ms"
-                          data-wow-delay="150ms">
-                          Plan your perfect getaway with our holiday taxi services. Explore destinations with comfort,
-                          safety, and flexible travel options.
-                        </p>
-                        <!-- /.service-card__icon -->
-                        <!-- <div class="service-card__middle__element">
-                            <img
-                              decoding="async"
-                              src="assets/uploads/2025/04/service-element.png"
-                              alt="service-element"
-                              title="service-element"
-                            />
-                          </div> -->
-                        <!-- /.service-card__middle__element -->
-                      </div>
-                      <!-- /.service-card__content -->
-                      <!-- <div class="service-card__btn">
-                        <a href="#" class="service-card__link">Explore More <i class="fas fa-arrow-right"></i></a>
-                      </div> -->
-                      <!-- /.service-card__btn -->
-                    </div>
-                    <!-- /.service-card -->
-                  </div>
-                  <!-- /.item -->
-                  <div class="item">
-                    <div class="service-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
-                      <div class="service-card__image">
-                        <img decoding="async" src="assets/uploads/2025/04/service-1-1.jpg" alt="service-1-1"
-                          title="service-1-1" />
-                      </div>
-                      <!-- /.service-card__image -->
-                      <div class="service-card__middle">
-                        <div class="service-card__icon">
-                          <div class="service-card__icon__inner">
-                            <i aria-hidden="true" class="icon-car-1"></i>
-                          </div>
-                          <!-- /.service-card__icon__inner -->
-                          <h3 class="service-card__title">
-                            <a href="#">City <br />
-                              Transport</a>
-                          </h3>
-                        </div>
-                        <p class="services-four__top__text wow fadeInUp" data-wow-duration="1500ms"
-                          data-wow-delay="150ms">
-                          Convenient and affordable travel within the city. Whether it’s daily commuting or shopping
-                          trips, we’ve got you covered.
-                        </p>
-                        <!-- /.service-card__icon -->
-                        <!-- <div class="service-card__middle__element">
-                            <img
-                              decoding="async"
-                              src="assets/uploads/2025/04/service-element.png"
-                              alt="service-element"
-                              title="service-element"
-                            />
-                          </div> -->
-                        <!-- /.service-card__middle__element -->
-                      </div>
-                      <!-- /.service-card__content -->
-                      <!-- <div class="service-card__btn">
-                        <a href="#" class="service-card__link">Explore More <i
-                            class="fas fa-arrow-right"></i></a>
-                      </div> -->
-                      <!-- /.service-card__btn -->
-                    </div>
-                    <!-- /.service-card -->
-                  </div>
-                  <!-- /.item -->
-                  <div class="item">
-                    <div class="service-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
-                      <div class="service-card__image">
-                        <img decoding="async" src="assets/uploads/2025/04/service-1-2.jpg" alt="service-1-2"
-                          title="service-1-2" />
-                      </div>
-                      <!-- /.service-card__image -->
-                      <div class="service-card__middle">
-                        <div class="service-card__icon">
-                          <div class="service-card__icon__inner">
-                            <i aria-hidden="true" class="icon-car-2"></i>
-                          </div>
-                          <!-- /.service-card__icon__inner -->
-                          <h3 class="service-card__title">
-                            <a href="#">Business <br />
-                              Tour</a>
-                          </h3>
-                        </div>
-                        <p class="services-four__top__text wow fadeInUp" data-wow-duration="1500ms"
-                          data-wow-delay="150ms">
-                          Professional and punctual transport for business meetings, events, or corporate travel. We
-                          value your time and comfort.
-                        </p>
-                        <!-- /.service-card__icon -->
-                        <!-- <div class="service-card__middle__element">
-                            <img
-                              decoding="async"
-                              src="assets/uploads/2025/04/service-element.png"
-                              alt="service-element"
-                              title="service-element"
-                            />
-                          </div> -->
-                        <!-- /.service-card__middle__element -->
-                      </div>
-                      <!-- /.service-card__content -->
-                      <!-- <div class="service-card__btn">
-                        <a href="#" class="service-card__link">Explore More <i
-                            class="fas fa-arrow-right"></i></a>
-                      </div> -->
-                      <!-- /.service-card__btn -->
-                    </div>
-                    <!-- /.service-card -->
-                  </div>
-                  <!-- /.item -->
-                  <div class="item">
-                    <div class="service-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
-                      <div class="service-card__image">
-                        <img decoding="async" src="assets/uploads/2025/04/airport_transport.jpg" alt="service-1-3"
-                          title="service-1-3" />
-                      </div>
-                      <!-- /.service-card__image -->
-                      <div class="service-card__middle">
-                        <div class="service-card__icon">
-                          <div class="service-card__icon__inner">
-                            <i aria-hidden="true" class="icon-car-3"></i>
-                          </div>
-                          <!-- /.service-card__icon__inner -->
-                          <h3 class="service-card__title">
-                            <a href="#">Airport <br />Transport</a>
-                          </h3>
-                        </div>
-                        <p class="services-four__top__text wow fadeInUp" data-wow-duration="1500ms"
-                          data-wow-delay="150ms">
-                          Timely pickups and drop-offs to and from the airport. Travel stress-free with our reliable
-                          airport taxi service.
-                        </p>
-                        <!-- /.service-card__icon -->
-                        <!-- <div class="service-card__middle__element">
-                            <img
-                              decoding="async"
-                              src="assets/uploads/2025/04/service-element.png"
-                              alt="service-element"
-                              title="service-element"
-                            />
-                          </div> -->
-                        <!-- /.service-card__middle__element -->
-                      </div>
-                      <!-- /.service-card__content -->
-                      <!-- <div class="service-card__btn">
-                        <a href="#" class="service-card__link">Explore More <i
-                            class="fas fa-arrow-right"></i></a>
-                      </div> -->
-                      <!-- /.service-card__btn -->
-                    </div>
-                    <!-- /.service-card -->
-                  </div>
-                  <!-- /.item -->
-
-                </div>
-                <!-- /.services-one__carousel -->
-              </div>
-              <!-- /.container -->
-              <div class="services-one__inner-bg"></div>
-              <!-- /.services-one__inner-bg -->
-            </section>
-            <!-- /.services-one section-space -->
-          </div>
-        </div>
-      </div>
-
-      <div class="elementor-element elementor-element-b1adcf2 e-con-full e-flex e-con e-parent" data-id="b1adcf2"
-        data-element_type="container">
-        <div class="elementor-element elementor-element-783ec19 elementor-widget elementor-widget-raj-testimonials"
-          data-id="783ec19" data-element_type="widget" data-widget_type="raj-testimonials.default">
-          <div class="elementor-widget-container">
-            <section class="testimonials-one section-space" id="testimonials">
-              <div class="container">
-                <div class="sec-title sec-title--center">
-                  <div class="sec-title__top wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="150ms">
-                    <div class="sec-title__shape"></div>
-                    <!-- /.sec-title__shape -->
-                    <h6 class="sec-title__tagline">testimonials</h6>
-                    <!-- /.sec-title__tagline -->
-                    <div class="sec-title__shape"></div>
-                    <!-- /.sec-title__shape -->
-                  </div>
-                  <!-- /.sec-title__top -->
-                  <h3 class="sec-title__title wow fadeInUp">
-                    What our Riders say <br />
-                    About Us
-                  </h3>
-                </div>
-                <!-- /.sec-title -->
-              </div>
-              <!-- /.container -->
-              <div class="testimonials-one__inner">
-                <div class="container">
-                  <div
-                    class="testimonials-one__carousel raj-owl__carousel raj-owl__carousel--basic-nav raj-owl__carousel--with-shadow owl-carousel owl-theme"
-                    data-owl-options='{"loop":true,"margin":0,"items":1,"nav":true,"dots":false,"smartSpeed":700,"autoplay":true,"autoplayTimeout":5000,"animateOut":"","animateIn":"","autoplayHoverPause":true,"navText":["&lt;span class=\"  icon-arrow-left \"&gt;&lt;\/span&gt;","&lt;span class=\"  icon-arrow-right \"&gt;&lt;\/span&gt;"],"responsive":{"1600":{"margin":30,"items":4},"1400":{"margin":30,"items":4},"1200":{"margin":30,"items":3},"992":{"margin":30,"items":2},"768":{"margin":30,"items":2},"576":{"margin":30,"items":1},"0":{"margin":10,"items":1}}}'>
-                    <div class="item">
-                      <div class="testimonial-card">
-                        <div class="testimonial-card__top">
-                          <div class="testimonial-card__author">
-                            <img decoding="async" src="assets/images/user.png" alt="author-1-2" title="author-1-2" />
-                            <div class="testimonial-card__icon">
-                              <i class="icon-quite-1"></i>
-                            </div>
-                            <!-- /.testimonial-card__icon -->
-                          </div>
-                          <!-- /.testimonial-card__author -->
-                          <div class="testimonial-card__top__content">
-                            <h4 class="testimonial-card__name">Naimish K</h4>
-                            <!-- /.testimonial-card__designation -->
-                          </div>
-                          <!-- /.testimonial-card__top__content -->
-                        </div>
-                        <!-- /.testimonial-card__top -->
-                        <p class="testimonial-card__text">
-                          Excellent service by Rajmandir Tour and Travel! From
-                          start to end, our trip was stress-free and
-                          well-organized. The drivers were polite, helpful,
-                          and made sure we had a great experience. Loved the
-                          local food, market visits, and darshan. Will surely
-                          travel again with them.
-                        </p>
-                        <!-- /.testimonial-card__quote -->
-                        <div class="testimonial-card__bottom fourrating">
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                        </div>
-                        <!-- /.testimonial-card__bottom -->
-                      </div>
-                      <!-- /.testimonial-card -->
-                    </div>
-                    <!-- /.item -->
-                    <div class="item">
-                      <div class="testimonial-card">
-                        <div class="testimonial-card__top">
-                          <div class="testimonial-card__author">
-                            <img decoding="async" src="assets/images/review/review1.jpeg" alt="author-1-1"
-                              title="author-1-1" />
-                            <div class="testimonial-card__icon">
-                              <i class="icon-quite-1"></i>
-                            </div>
-                            <!-- /.testimonial-card__icon -->
-                          </div>
-                          <!-- /.testimonial-card__author -->
-                          <div class="testimonial-card__top__content">
-                            <h4 class="testimonial-card__name">
-                              Mannat Sahil Gupta
-                            </h4>
-                            <!-- /.testimonial-card__designation -->
-                          </div>
-                          <!-- /.testimonial-card__top__content -->
-                        </div>
-                        <!-- /.testimonial-card__top -->
-                        <p class="testimonial-card__text">
-                          We had an amazing trip to Somnathji, Dwarkaji,
-                          Nageshwarji, and local Rajkot with Rajmandir Tour
-                          and Travel. Everything was well-organized — from
-                          clean vehicles and smooth transportation to helpful
-                          local guidance. Special thanks to Gaurav Bhai for
-                          the warm tea and smooth shuttle service, Bhagirath
-                          Bhai for his kind help and local insights
-                          (especially the Pan, Gujarati thali & Basondi!), and
-                          Parveen Bhai for early Jyotirling and Dwarkaji
-                          darshan. Your team’s professionalism, care, and
-                          excellent driving made the journey memorable. Highly
-                          recommended and will definitely plan future trips
-                          with you. Thank you! 🙏🏻
-                        </p>
-                        <!-- /.testimonial-card__quote -->
-                        <div class="testimonial-card__bottom">
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                        </div>
-                        <!-- /.testimonial-card__bottom -->
-                      </div>
-                      <!-- /.testimonial-card -->
-                    </div>
-                    <!-- /.item -->
-                    <!-- /.item -->
-                    <div class="item">
-                      <div class="testimonial-card">
-                        <div class="testimonial-card__top">
-                          <div class="testimonial-card__author">
-                            <img decoding="async" src="assets/images/user.png" alt="author-1-1" title="author-1-1" />
-                            <div class="testimonial-card__icon">
-                              <i class="icon-quite-1"></i>
-                            </div>
-                            <!-- /.testimonial-card__icon -->
-                          </div>
-                          <!-- /.testimonial-card__author -->
-                          <div class="testimonial-card__top__content">
-                            <h4 class="testimonial-card__name">Heena N</h4>
-                            <!-- /.testimonial-card__designation -->
-                          </div>
-                          <!-- /.testimonial-card__top__content -->
-                        </div>
-                        <!-- /.testimonial-card__top -->
-                        <p class="testimonial-card__text">
-                          I had booked the Kumbh Mela snan trip with Rajmandir. It would’ve been hectic and tough to
-                          manage without Gauravbhai’s local knowledge and Bhagirathbhai’s timely help at every step. I
-                          truly recommend them to anyone planning a trip and will surely book them for my next trips.
-                        </p>
-                        <!-- /.testimonial-card__quote -->
-                        <div class="testimonial-card__bottom">
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                        </div>
-                        <!-- /.testimonial-card__bottom -->
-                      </div>
-                      <!-- /.testimonial-card -->
-                    </div>
-                    <!-- /.item -->
-                    <div class="item">
-                      <div class="testimonial-card">
-                        <div class="testimonial-card__top">
-                          <div class="testimonial-card__author">
-                            <img decoding="async" src="assets/images/user.png" alt="author-1-3" title="author-1-3" />
-                            <div class="testimonial-card__icon">
-                              <i class="icon-quite-1"></i>
-                            </div>
-                            <!-- /.testimonial-card__icon -->
-                          </div>
-                          <!-- /.testimonial-card__author -->
-                          <div class="testimonial-card__top__content">
-                            <h4 class="testimonial-card__name">Dhaval P</h4>
-
-                            <!-- /.testimonial-card__designation -->
-                          </div>
-                          <!-- /.testimonial-card__top__content -->
-                        </div>
-                        <!-- /.testimonial-card__top -->
-                        <p class="testimonial-card__text">
-                          Our trip with Rajmandir Tour and Travel was truly
-                          memorable. The team was professional, the car was
-                          clean, and everything ran on time. We felt safe and
-                          comfortable throughout. A big thanks to the drivers
-                          for their kind support and local guidance. Great
-                          experience overall!
-                        </p>
-                        <!-- /.testimonial-card__quote -->
-                        <div class="testimonial-card__bottom fourrating">
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                          <i class="icon-star"></i>
-                        </div>
-                        <!-- /.testimonial-card__bottom -->
-                      </div>
-                      <!-- /.testimonial-card -->
-                    </div>
-                    <!-- /.item -->
-                  </div>
-                  <!-- /.testimonials-one__carousel -->
-                </div>
-                <!-- /.container -->
-              </div>
-              <!-- /.testimonials-one__inner -->
-              <div class="testimonials-one__shape-right">
-                <div class="testimonials-one__shape-right__one"></div>
-                <!-- /.testimonials-one__shape-right__one -->
-                <div class="testimonials-one__shape-right__two"></div>
-                <!-- /.testimonials-one__shape-right__two -->
-              </div>
-              <!-- /.testimonials-one__shape-right -->
-            </section>
-            <!-- /.testimonials-one section-space -->
-          </div>
-        </div>
-      </div>
-      
       <div class="elementor-element elementor-element-1e641c3 e-con-full e-flex e-con e-parent" data-id="1e641c3"
         data-element_type="container">
         <div class="elementor-element elementor-element-fdb359d elementor-widget elementor-widget-raj-blog"
           data-id="fdb359d" data-element_type="widget" data-widget_type="raj-blog.default">
           <div class="elementor-widget-container">
-            <section class="blog-one section-space blog-one--two" id="blog">
+            <section class="blog-one section-space pb-5 blog-one--two" id="blog">
               <div class="container">
                 <div class="blog-one__top">
                   <div class="row gutter-y-50 align-items-center">
@@ -3166,11 +2661,550 @@
           </div>
         </div>
       </div>
+
+      <div id="services" class="elementor-element elementor-element-ffd5bbe e-con-full e-flex e-con e-parent"
+        data-id="ffd5bbe" data-element_type="container">
+        <div class="elementor-element elementor-element-827249e elementor-widget elementor-widget-raj-service"
+          data-id="827249e" data-element_type="widget" data-widget_type="raj-service.default">
+          <div class="elementor-widget-container">
+            <section class="services-one section-space pb-0" id="services">
+              <div class="services-one__bg" style="
+                    background-image: url(assets/uploads/2025/04/services-bg-1-1.png);
+                  "></div>
+              <!-- /.services-one__bg -->
+              <div class="container">
+                <div class="raj-info">
+                  <div class="raj-info__inner">
+                    <div class="raj-info__bg" style="
+                          background-image: url(assets/uploads/2025/04/raj-info-bg-1-1.png);
+                        "></div>
+                    <!-- /.raj-info__bg -->
+                    <div class="raj-info__row row">
+                      <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="raj-info__item">
+                          <div class="raj-info__item__icon">
+                            <i aria-hidden="true" class="icon-booking"></i>
+                          </div>
+                          <!-- /.raj-info__item__icon -->
+                          <h4 class="raj-info__item__title">
+                            Easy Booking &amp;<br />
+                            Instant Confirmation
+                          </h4>
+                          <!-- /.raj-info__item__title -->
+                        </div>
+                        <!-- /.raj-info__item -->
+                      </div>
+                      <!-- /.col-lg-4 -->
+                      <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="raj-info__item">
+                          <div class="raj-info__item__icon">
+                            <i aria-hidden="true" class="icon-map"></i>
+                          </div>
+                          <!-- /.raj-info__item__icon -->
+                          <h4 class="raj-info__item__title">
+                            Pickup available <br />
+                            wherever you are
+                          </h4>
+                          <!-- /.raj-info__item__title -->
+                        </div>
+                        <!-- /.raj-info__item -->
+                      </div>
+                      <!-- /.col-lg-4 -->
+                      <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="raj-info__item">
+                          <div class="raj-info__item__icon">
+                            <i aria-hidden="true" class="icon-costumer"></i>
+                          </div>
+                          <!-- /.raj-info__item__icon -->
+                          <h4 class="raj-info__item__title">
+                            Trusted by thousands <br />
+                            loved by every rider
+                          </h4>
+                          <!-- /.raj-info__item__title -->
+                        </div>
+                        <!-- /.raj-info__item -->
+                      </div>
+                      <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.raj-info__row row -->
+                    <img decoding="async" src="assets/uploads/2025/04/raj-info-1-1.jpg" alt="raj-info-1-1"
+                      title="raj-info-1-1" class="raj-info__image" />
+                  </div>
+                  <!-- /.raj-info__inner -->
+                </div>
+                <!-- /.raj-info -->
+              </div>
+              <!-- /.container -->
+              <div class="container">
+                <div class="services-one__top">
+                  <div class="row gutter-y-50 align-items-center">
+                    <div class="col-md-8">
+                      <div class="sec-title">
+                        <div class="sec-title__top wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="150ms">
+                          <div class="sec-title__shape"></div>
+                          <!-- /.sec-title__shape -->
+                          <h6 class="sec-title__tagline">our services</h6>
+                          <!-- /.sec-title__tagline -->
+                        </div>
+                        <!-- /.sec-title__top -->
+                        <h3 class="sec-title__title wow fadeInUp">
+                          Tailored Travel for<br />
+                          Every Occasion
+                        </h3>
+                      </div>
+                      <!-- /.sec-title -->
+                    </div>
+                    <!-- /.col-md-8 -->
+                    <div class="col-md-4">
+                      <div class="services-one__custome-navs"></div>
+                      <!-- /.services-one__custom-navs -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                  </div>
+                  <!-- /.row gutter-y-40 -->
+                </div>
+                <!-- /.services-one__top -->
+                <div
+                  class="services-one__carousel raj-owl__carousel raj-owl__carousel--basic-nav owl-carousel owl-theme"
+                  data-owl-options='{
+                    "items": 1,
+                    "margin": 10,
+                    "loop": true,
+                    "smartSpeed": 700,
+                    "navContainer": ".services-one__custome-navs",
+                    "nav": true,
+                    "dots": false,
+                    "navText": ["<span class=\"icon-arrow-left\"></span>","<span class=\"icon-arrow-right\"></span>"],
+                    "autoplay": true,
+                    "responsive": {
+                        "0": {
+                            "items": 1,
+                            "margin": 10
+                        },
+                        "576": {
+                            "items": 1,
+                            "margin": 30
+                        },
+                        "768": {
+                            "items": 2,
+                            "margin": 30
+                        },
+                        "992": {
+                            "items": 2,
+                            "margin": 30
+                        },
+                        "1200": {
+                            "items": 3,
+                            "margin": 30
+                        }
+                    }
+                }'>
+                  <!-- /.item -->
+                  <div class="item">
+                    <div class="service-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                      <div class="service-card__image">
+                        <img decoding="async" src="assets/uploads/2025/04/family_tour.jpg" alt="service-1-3"
+                          title="service-1-3" />
+                      </div>
+                      <!-- /.service-card__image -->
+                      <div class="service-card__middle">
+                        <div class="service-card__icon">
+                          <div class="service-card__icon__inner">
+                            <i aria-hidden="true" class="icon-car"></i>
+                          </div>
+                          <!-- /.service-card__icon__inner -->
+                          <h3 class="service-card__title">
+                            <a href="#">Holiday<br />Tour</a>
+                          </h3>
+                        </div>
+                        <p class="services-four__top__text wow fadeInUp" data-wow-duration="1500ms"
+                          data-wow-delay="150ms">
+                          Plan your perfect getaway with our holiday taxi services. Explore destinations with comfort,
+                          safety, and flexible travel options.
+                        </p>
+                        <!-- /.service-card__icon -->
+                        <!-- <div class="service-card__middle__element">
+                            <img
+                              decoding="async"
+                              src="assets/uploads/2025/04/service-element.png"
+                              alt="service-element"
+                              title="service-element"
+                            />
+                          </div> -->
+                        <!-- /.service-card__middle__element -->
+                      </div>
+                      <!-- /.service-card__content -->
+                      <!-- <div class="service-card__btn">
+                        <a href="#" class="service-card__link">Explore More <i class="fas fa-arrow-right"></i></a>
+                      </div> -->
+                      <!-- /.service-card__btn -->
+                    </div>
+                    <!-- /.service-card -->
+                  </div>
+                  <!-- /.item -->
+                  <div class="item">
+                    <div class="service-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                      <div class="service-card__image">
+                        <img decoding="async" src="assets/uploads/2025/04/service-1-1.jpg" alt="service-1-1"
+                          title="service-1-1" />
+                      </div>
+                      <!-- /.service-card__image -->
+                      <div class="service-card__middle">
+                        <div class="service-card__icon">
+                          <div class="service-card__icon__inner">
+                            <i aria-hidden="true" class="icon-car-1"></i>
+                          </div>
+                          <!-- /.service-card__icon__inner -->
+                          <h3 class="service-card__title">
+                            <a href="#">City <br />
+                              Transport</a>
+                          </h3>
+                        </div>
+                        <p class="services-four__top__text wow fadeInUp" data-wow-duration="1500ms"
+                          data-wow-delay="150ms">
+                          Convenient and affordable travel within the city. Whether it’s daily commuting or shopping
+                          trips, we’ve got you covered.
+                        </p>
+                        <!-- /.service-card__icon -->
+                        <!-- <div class="service-card__middle__element">
+                            <img
+                              decoding="async"
+                              src="assets/uploads/2025/04/service-element.png"
+                              alt="service-element"
+                              title="service-element"
+                            />
+                          </div> -->
+                        <!-- /.service-card__middle__element -->
+                      </div>
+                      <!-- /.service-card__content -->
+                      <!-- <div class="service-card__btn">
+                        <a href="#" class="service-card__link">Explore More <i
+                            class="fas fa-arrow-right"></i></a>
+                      </div> -->
+                      <!-- /.service-card__btn -->
+                    </div>
+                    <!-- /.service-card -->
+                  </div>
+                  <!-- /.item -->
+                  <div class="item">
+                    <div class="service-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                      <div class="service-card__image">
+                        <img decoding="async" src="assets/uploads/2025/04/service-1-2.jpg" alt="service-1-2"
+                          title="service-1-2" />
+                      </div>
+                      <!-- /.service-card__image -->
+                      <div class="service-card__middle">
+                        <div class="service-card__icon">
+                          <div class="service-card__icon__inner">
+                            <i aria-hidden="true" class="icon-car-2"></i>
+                          </div>
+                          <!-- /.service-card__icon__inner -->
+                          <h3 class="service-card__title">
+                            <a href="#">Business <br />
+                              Tour</a>
+                          </h3>
+                        </div>
+                        <p class="services-four__top__text wow fadeInUp" data-wow-duration="1500ms"
+                          data-wow-delay="150ms">
+                          Professional and punctual transport for business meetings, events, or corporate travel. We
+                          value your time and comfort.
+                        </p>
+                        <!-- /.service-card__icon -->
+                        <!-- <div class="service-card__middle__element">
+                            <img
+                              decoding="async"
+                              src="assets/uploads/2025/04/service-element.png"
+                              alt="service-element"
+                              title="service-element"
+                            />
+                          </div> -->
+                        <!-- /.service-card__middle__element -->
+                      </div>
+                      <!-- /.service-card__content -->
+                      <!-- <div class="service-card__btn">
+                        <a href="#" class="service-card__link">Explore More <i
+                            class="fas fa-arrow-right"></i></a>
+                      </div> -->
+                      <!-- /.service-card__btn -->
+                    </div>
+                    <!-- /.service-card -->
+                  </div>
+                  <!-- /.item -->
+                  <div class="item">
+                    <div class="service-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                      <div class="service-card__image">
+                        <img decoding="async" src="assets/uploads/2025/04/airport_transport.jpg" alt="service-1-3"
+                          title="service-1-3" />
+                      </div>
+                      <!-- /.service-card__image -->
+                      <div class="service-card__middle">
+                        <div class="service-card__icon">
+                          <div class="service-card__icon__inner">
+                            <i aria-hidden="true" class="icon-car-3"></i>
+                          </div>
+                          <!-- /.service-card__icon__inner -->
+                          <h3 class="service-card__title">
+                            <a href="#">Airport <br />Transport</a>
+                          </h3>
+                        </div>
+                        <p class="services-four__top__text wow fadeInUp" data-wow-duration="1500ms"
+                          data-wow-delay="150ms">
+                          Timely pickups and drop-offs to and from the airport. Travel stress-free with our reliable
+                          airport taxi service.
+                        </p>
+                        <!-- /.service-card__icon -->
+                        <!-- <div class="service-card__middle__element">
+                            <img
+                              decoding="async"
+                              src="assets/uploads/2025/04/service-element.png"
+                              alt="service-element"
+                              title="service-element"
+                            />
+                          </div> -->
+                        <!-- /.service-card__middle__element -->
+                      </div>
+                      <!-- /.service-card__content -->
+                      <!-- <div class="service-card__btn">
+                        <a href="#" class="service-card__link">Explore More <i
+                            class="fas fa-arrow-right"></i></a>
+                      </div> -->
+                      <!-- /.service-card__btn -->
+                    </div>
+                    <!-- /.service-card -->
+                  </div>
+                  <!-- /.item -->
+
+                </div>
+                <!-- /.services-one__carousel -->
+              </div>
+              <!-- /.container -->
+              <div class="services-one__inner-bg bg-light"></div>
+              <!-- /.services-one__inner-bg -->
+            </section>
+            <!-- /.services-one section-space -->
+          </div>
+        </div>
+      </div>
+
+      <div class="elementor-element elementor-element-b1adcf2 e-con-full e-flex e-con e-parent" data-id="b1adcf2"
+        data-element_type="container">
+        <div class="elementor-element elementor-element-783ec19 elementor-widget elementor-widget-raj-testimonials"
+          data-id="783ec19" data-element_type="widget" data-widget_type="raj-testimonials.default">
+          <div class="elementor-widget-container">
+            <section class="testimonials-one section-space bg-light" id="testimonials">
+              <div class="container">
+                <div class="sec-title sec-title--center">
+                  <div class="sec-title__top wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="150ms">
+                    <div class="sec-title__shape"></div>
+                    <!-- /.sec-title__shape -->
+                    <h6 class="sec-title__tagline">testimonials</h6>
+                    <!-- /.sec-title__tagline -->
+                    <div class="sec-title__shape"></div>
+                    <!-- /.sec-title__shape -->
+                  </div>
+                  <!-- /.sec-title__top -->
+                  <h3 class="sec-title__title wow fadeInUp">
+                    What our Riders say <br />
+                    About Us
+                  </h3>
+                </div>
+                <!-- /.sec-title -->
+              </div>
+              <!-- /.container -->
+              <div class="testimonials-one__inner">
+                <div class="container">
+                  <div
+                    class="testimonials-one__carousel raj-owl__carousel raj-owl__carousel--basic-nav raj-owl__carousel--with-shadow owl-carousel owl-theme"
+                    data-owl-options='{"loop":true,"margin":0,"items":1,"nav":true,"dots":false,"smartSpeed":700,"autoplay":true,"autoplayTimeout":5000,"animateOut":"","animateIn":"","autoplayHoverPause":true,"navText":["&lt;span class=\"  icon-arrow-left \"&gt;&lt;\/span&gt;","&lt;span class=\"  icon-arrow-right \"&gt;&lt;\/span&gt;"],"responsive":{"1600":{"margin":30,"items":4},"1400":{"margin":30,"items":4},"1200":{"margin":30,"items":3},"992":{"margin":30,"items":2},"768":{"margin":30,"items":2},"576":{"margin":30,"items":1},"0":{"margin":10,"items":1}}}'>
+                    <div class="item">
+                      <div class="testimonial-card">
+                        <div class="testimonial-card__top">
+                          <div class="testimonial-card__author">
+                            <img decoding="async" src="assets/images/user.png" alt="author-1-2" title="author-1-2" />
+                            <div class="testimonial-card__icon">
+                              <i class="icon-quite-1"></i>
+                            </div>
+                            <!-- /.testimonial-card__icon -->
+                          </div>
+                          <!-- /.testimonial-card__author -->
+                          <div class="testimonial-card__top__content">
+                            <h4 class="testimonial-card__name">Naimish K</h4>
+                            <!-- /.testimonial-card__designation -->
+                          </div>
+                          <!-- /.testimonial-card__top__content -->
+                        </div>
+                        <!-- /.testimonial-card__top -->
+                        <p class="testimonial-card__text">
+                          Excellent service by Rajmandir Tour and Travel! From
+                          start to end, our trip was stress-free and
+                          well-organized. The drivers were polite, helpful,
+                          and made sure we had a great experience. Loved the
+                          local food, market visits, and darshan. Will surely
+                          travel again with them.
+                        </p>
+                        <!-- /.testimonial-card__quote -->
+                        <div class="testimonial-card__bottom fourrating">
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                        </div>
+                        <!-- /.testimonial-card__bottom -->
+                      </div>
+                      <!-- /.testimonial-card -->
+                    </div>
+                    <!-- /.item -->
+                    <div class="item">
+                      <div class="testimonial-card">
+                        <div class="testimonial-card__top">
+                          <div class="testimonial-card__author">
+                            <img decoding="async" src="assets/images/review/review1.jpeg" alt="author-1-1"
+                              title="author-1-1" />
+                            <div class="testimonial-card__icon">
+                              <i class="icon-quite-1"></i>
+                            </div>
+                            <!-- /.testimonial-card__icon -->
+                          </div>
+                          <!-- /.testimonial-card__author -->
+                          <div class="testimonial-card__top__content">
+                            <h4 class="testimonial-card__name">
+                              Mannat Sahil Gupta
+                            </h4>
+                            <!-- /.testimonial-card__designation -->
+                          </div>
+                          <!-- /.testimonial-card__top__content -->
+                        </div>
+                        <!-- /.testimonial-card__top -->
+                        <p class="testimonial-card__text">
+                          We had an amazing trip to Somnathji, Dwarkaji,
+                          Nageshwarji, and local Rajkot with Rajmandir Tour
+                          and Travel. Everything was well-organized — from
+                          clean vehicles and smooth transportation to helpful
+                          local guidance. Special thanks to Gaurav Bhai for
+                          the warm tea and smooth shuttle service, Bhagirath
+                          Bhai for his kind help and local insights
+                          (especially the Pan, Gujarati thali & Basondi!), and
+                          Parveen Bhai for early Jyotirling and Dwarkaji
+                          darshan. Your team’s professionalism, care, and
+                          excellent driving made the journey memorable. Highly
+                          recommended and will definitely plan future trips
+                          with you. Thank you! 🙏🏻
+                        </p>
+                        <!-- /.testimonial-card__quote -->
+                        <div class="testimonial-card__bottom">
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                        </div>
+                        <!-- /.testimonial-card__bottom -->
+                      </div>
+                      <!-- /.testimonial-card -->
+                    </div>
+                    <!-- /.item -->
+                    <!-- /.item -->
+                    <div class="item">
+                      <div class="testimonial-card">
+                        <div class="testimonial-card__top">
+                          <div class="testimonial-card__author">
+                            <img decoding="async" src="assets/images/user.png" alt="author-1-1" title="author-1-1" />
+                            <div class="testimonial-card__icon">
+                              <i class="icon-quite-1"></i>
+                            </div>
+                            <!-- /.testimonial-card__icon -->
+                          </div>
+                          <!-- /.testimonial-card__author -->
+                          <div class="testimonial-card__top__content">
+                            <h4 class="testimonial-card__name">Heena N</h4>
+                            <!-- /.testimonial-card__designation -->
+                          </div>
+                          <!-- /.testimonial-card__top__content -->
+                        </div>
+                        <!-- /.testimonial-card__top -->
+                        <p class="testimonial-card__text">
+                          I had booked the Kumbh Mela snan trip with Rajmandir. It would’ve been hectic and tough to
+                          manage without Gauravbhai’s local knowledge and Bhagirathbhai’s timely help at every step. I
+                          truly recommend them to anyone planning a trip and will surely book them for my next trips.
+                        </p>
+                        <!-- /.testimonial-card__quote -->
+                        <div class="testimonial-card__bottom">
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                        </div>
+                        <!-- /.testimonial-card__bottom -->
+                      </div>
+                      <!-- /.testimonial-card -->
+                    </div>
+                    <!-- /.item -->
+                    <div class="item">
+                      <div class="testimonial-card">
+                        <div class="testimonial-card__top">
+                          <div class="testimonial-card__author">
+                            <img decoding="async" src="assets/images/user.png" alt="author-1-3" title="author-1-3" />
+                            <div class="testimonial-card__icon">
+                              <i class="icon-quite-1"></i>
+                            </div>
+                            <!-- /.testimonial-card__icon -->
+                          </div>
+                          <!-- /.testimonial-card__author -->
+                          <div class="testimonial-card__top__content">
+                            <h4 class="testimonial-card__name">Dhaval P</h4>
+
+                            <!-- /.testimonial-card__designation -->
+                          </div>
+                          <!-- /.testimonial-card__top__content -->
+                        </div>
+                        <!-- /.testimonial-card__top -->
+                        <p class="testimonial-card__text">
+                          Our trip with Rajmandir Tour and Travel was truly
+                          memorable. The team was professional, the car was
+                          clean, and everything ran on time. We felt safe and
+                          comfortable throughout. A big thanks to the drivers
+                          for their kind support and local guidance. Great
+                          experience overall!
+                        </p>
+                        <!-- /.testimonial-card__quote -->
+                        <div class="testimonial-card__bottom fourrating">
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                          <i class="icon-star"></i>
+                        </div>
+                        <!-- /.testimonial-card__bottom -->
+                      </div>
+                      <!-- /.testimonial-card -->
+                    </div>
+                    <!-- /.item -->
+                  </div>
+                  <!-- /.testimonials-one__carousel -->
+                </div>
+                <!-- /.container -->
+              </div>
+              <!-- /.testimonials-one__inner -->
+              <div class="testimonials-one__shape-right">
+                <div class="testimonials-one__shape-right__one"></div>
+                <!-- /.testimonials-one__shape-right__one -->
+                <div class="testimonials-one__shape-right__two"></div>
+                <!-- /.testimonials-one__shape-right__two -->
+              </div>
+              <!-- /.testimonials-one__shape-right -->
+            </section>
+            <!-- /.testimonials-one section-space -->
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
   <!-- #page -->
 
-  <div id="footer" class="footer-wrapper">
+  <div id="footer" class="footer-wrapper mt-custom-7">
     <!-- the loop -->
     <div data-elementor-type="wp-post" data-elementor-id="835" class="elementor elementor-835">
       <div class="elementor-element elementor-element-1963468 e-flex e-con-boxed e-con e-parent" data-id="1963468"
